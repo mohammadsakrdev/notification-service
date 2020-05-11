@@ -1,7 +1,8 @@
 const Redis = require('ioredis');
-const subscriber = new Redis();
 
 const config = require('../../common/config/config');
+
+const subscriber = new Redis({ host: 'redis' });
 
 const {
   sendNotificationMessage

@@ -1,5 +1,8 @@
 const Redis = require('ioredis');
-const publisher = new Redis();
+
+const config = require('../../common/config/config');
+
+const publisher = new Redis({ host: 'redis' });
 
 /**
  * @function
