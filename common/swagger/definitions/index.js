@@ -1,5 +1,5 @@
-const authDefinitions = require('./auth-definitions');
+const notificationDefinitions = require('./notification-definitions');
 
 module.exports = {
-  authDefinitions
+  ...notificationDefinitions
 };

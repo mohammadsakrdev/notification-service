@@ -72,6 +72,6 @@ initApp(app);
 app.listen(config.app.port, () => {
   // eslint-disable-next-line no-console
   console.log(
-    `Notifications service is up & running on port ${config.app.port} on environnement ${process.env.NODE_ENV}`
+    `Notifications service is up & running on port ${config.app.port}`
   );
 });

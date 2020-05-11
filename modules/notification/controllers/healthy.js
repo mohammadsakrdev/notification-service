@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 const { OK } = require('http-status-codes');
 
 // @desc Notification module health check

@@ -1,13 +1,24 @@
-/* eslint-disable func-names */
-/* eslint-disable no-useless-escape */
 const mongoose = require('mongoose');
 
-const config = require('../../common/config/config');
+const notificationsEnum = require('../../common/enum/notifications');
 
 const { Schema } = mongoose;
 
 const NotificationSchema = new Schema(
-  {},
+  {
+    sender: { type: String },
+    receivers: [{ type: String }],
+    type: {
+      type: Number,
+      enum: Object.values(notificationsEnum)
+    },
+    title: {
+      type: String
+    },
+    message: {
+      type: String
+    }
+  },
   {
     timestamps: true
   }

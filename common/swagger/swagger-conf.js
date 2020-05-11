@@ -1,13 +1,13 @@
 module.exports = {
   openapi: '3.0.0',
   info: {
-    title: 'Boilerplate',
-    description: 'Boilerplate backend APIs documentation',
-    termsOfService: 'http://Boilerplate.com/terms/',
+    title: 'Notifications Service',
+    description: 'Notifications service APIs documentation',
+    termsOfService: 'http://notifications.com/terms/',
     contact: {
       name: 'API Support',
-      url: 'http://www.Boilerplate.com/support',
-      email: 'support@Boilerplate.com'
+      url: 'http://www.notifications.com/support',
+      email: 'support@notififcations.com'
     },
     license: {
       name: 'Apache 2.0',
@@ -18,7 +18,7 @@ module.exports = {
   servers: [
     {
       url: '{protocol}://localhost:3000/api/v0',
-      description: 'Localhost server (uses test data)',
+      description: 'Localhost server',
       variables: {
         protocol: {
           enum: ['http'],
@@ -27,19 +27,19 @@ module.exports = {
       }
     },
     {
-      url: '{protocol}://Boilerplate.example.com/api/v0',
+      url: '{protocol}://notifications.com/api/v0',
       description: 'For production to be added',
       variables: {
         protocol: {
-          enum: ['http', 'https'],
-          default: 'https'
+          enum: ['http'],
+          default: 'http'
         }
       }
     }
   ],
   tags: [
     {
-      name: 'Auth'
+      name: 'Notifications'
     }
   ]
 };
