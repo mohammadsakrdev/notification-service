@@ -6,7 +6,7 @@ module.exports = {
       operationId: 'Notify',
       parameters: [],
       requestBody: {
-        description: '',
+        description: `The notification type:\n * SMS: 1\n * Push notification: 2\n`,
         content: {
           'application/json': {
             schema: {
