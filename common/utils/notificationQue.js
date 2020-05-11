@@ -17,7 +17,7 @@ module.exports = {
         console.log('Queue created', response);
       }
     } catch (err) {
-      if (err.name == 'queueExists') console.error(' DQueue Exists');
+      if (err.name == 'queueExists') console.log(' DQueue Exists');
       else 'redis error';
     }
   },
@@ -31,7 +31,7 @@ module.exports = {
         console.log('Message sent. ID:', response);
       }
     } catch (err) {
-      console.error(err);
+      console.log(err);
     }
   }
 };

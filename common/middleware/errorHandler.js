@@ -4,7 +4,7 @@ const { INTERNAL_SERVER_ERROR } = require('http-status-codes');
 
 // @desc Error handler
 const errorHandler = (err, req, res, next) => {
-  console.error(
+  console.log(
     `Message: ${JSON.stringify(err.message)}, Stack: ${JSON.stringify(
       err.stack
     )}`

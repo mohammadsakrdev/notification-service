@@ -75,3 +75,5 @@ app.listen(config.app.port, () => {
     `Notifications service is up & running on port ${config.app.port}`
   );
 });
+
+module.exports = app;

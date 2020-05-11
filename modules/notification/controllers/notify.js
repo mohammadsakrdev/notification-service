@@ -23,5 +23,5 @@ module.exports = asyncHandler(async (req, res, next) => {
       const formatted = formatNotifications(data);
       publisher(config.events.notifications, JSON.stringify(formatted));
     })
-    .catch((err) => console.error(err.message));
+    .catch((err) => console.log(err.message));
 });

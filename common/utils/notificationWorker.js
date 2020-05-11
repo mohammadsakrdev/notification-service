@@ -17,7 +17,7 @@ worker.on('message', function(data, next, id) {
 
 // optional error listeners
 worker.on('error', function(err, message) {
-  console.error('ERROR', err, message.id);
+  console.log('ERROR', err, message.id);
 });
 worker.on('exceeded', function(message) {
   console.log('EXCEEDED', message.id);
