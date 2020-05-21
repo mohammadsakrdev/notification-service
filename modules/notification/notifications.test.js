@@ -7,7 +7,7 @@ afterAll(async () => {
   await new Promise((resolve) => setTimeout(() => resolve(), 30000)); // avoid jest open handle error
 });
 
-https: it('tests the post new movies endpoint and returns as success message', async () => {
+https: it('tests the post notifications endpoint and returns as success message', async () => {
   const response = await supertest(app)
     .post('/api/v0/notifications/notify')
     .send({
