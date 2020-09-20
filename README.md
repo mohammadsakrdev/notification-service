@@ -16,3 +16,5 @@ you can still run the test like this:
 \$ docker-compose run --rm project_name npm run test
 
 We can now access the application documentation at http://localhost:3000/api/v0/explore
+
+for more info https://medium.com/@sharukhsharu/rsmq-message-queueing-with-node-js-and-redis-3f6def944221
